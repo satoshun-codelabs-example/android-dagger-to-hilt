@@ -37,9 +37,4 @@ interface AppComponent {
         // With @BindsInstance, the Context passed in will be available in the graph
         fun create(@BindsInstance context: Context): AppComponent
     }
-
-    // Types that can be retrieved from the graph
-    fun registrationComponent(): RegistrationComponent.Factory
-    fun loginComponent(): LoginComponent.Factory
-    fun userManager(): UserManager
 }
